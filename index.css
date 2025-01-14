@@ -1,0 +1,504 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.main-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+    
+}
+.logo{
+    padding: 0px 15px;
+    width: 360px;
+    height: 80px;
+    align-items: center;
+}
+.logo img{
+    width: 181px;
+    margin-top: 20px;
+}
+.list{
+    width: 760px;
+    
+}
+.list ul{
+    display: flex;
+    list-style: none;
+    float: right;
+}
+.list ul li{
+    display: block;
+    margin:0px 16px;
+    line-height: 80x;
+}
+.list ul li a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 17px;
+    line-height: 80px;
+    font-weight: bold;
+}
+.list ul li a:hover{
+    color: #00BDFF;
+}
+.toggle{
+    display: none;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    
+    width: 50px ;
+    background-color: #FFFFFF;
+    /* background: blue; */
+    position: relative;
+    margin-right: 50px;
+    
+}
+.toggle > i:hover {
+    color:#00BDFF;
+
+}
+
+.toggle > i  {
+    
+    width: 100%;
+    height: 100%;
+    transition:ease 0.25s;
+    margin-left: 20px;
+    
+}
+.dropdown {
+    position: absolute;
+    top:60px;
+    left: -70px;
+
+    width: 200px;
+    border-top: 1px solid black;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition:ease 0.25s;
+    background-color: #FFFFFF;
+}
+.dropdown.hide {
+    transform: scaleY(1);
+}
+.dropdown  li {
+    padding: 5px;
+    
+   overflow-y: hidden;
+   /* border:1px solid #f78da7; */
+   margin-bottom: 20px;
+   color:black;
+   font-size: 20px;
+   z-index: 1000;
+   font-weight: 600;
+}
+.dropdown  a {
+    text-decoration: none;
+    
+    
+}
+.dropdown  li:hover {
+    
+    color: #00BDFF;
+}
+
+@media  screen and (max-width:900px) {
+    .toggle {
+        display: block;
+    }
+    .dropdown {
+        display: block;
+    }
+    .ct2{
+        display: none;
+    }
+    .ct1 {
+        
+        margin: 0;
+    }
+    
+}
+@media  screen and (max-width:900px) {
+    .list {
+        display: none;
+    }
+   
+}
+.title1 img{
+    
+    width: 100%;
+    height: auto;
+}
+.title2 p,h1,h2{
+    text-align: center;
+}
+.title2 p{
+    font-weight: 600;
+    font-size: 16px;
+    font-style: normal;
+}
+.list1{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 40px;
+}
+.img1 img{
+    width: 450px;
+    
+}
+.icon{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 650px;
+    padding-top: 20px;
+    
+}
+.icon .icon1{
+    width: 150px;
+    padding-left: 11%;
+    padding-bottom: 10%;
+    
+    
+
+}
+.icon .icon1 p{
+    font-size: 16px;
+    font-weight: 600;
+    color: #00139B;
+}
+.list2{
+    background-image: url('Union.png');
+    background-size: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    margin-top: 100px;
+    width: 100%;
+    
+}
+.list2 .ct{
+    display: flex;
+    justify-content: space-between;
+    height: 250px;
+    
+}
+.list2 .ct .ct1{
+    height: 100px;
+}
+.list2 .ct2{
+    position: relative;
+    top: -60px;
+}
+.list2 .ct2 img{
+    width: 75%;
+    
+}
+.tab{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    position: relative;
+    
+}
+.tab1{
+    width: 340px;
+    height: 500px;
+    background-color: #FFFFFF ;
+    box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.22);
+border-radius: 15px;
+    margin: 10px 15px;
+    
+}
+.head1{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 20px;
+    width: 310px;
+    margin: auto;
+    
+    
+}
+.head1 img{
+    max-width: 100%;
+    height: 100px;
+}
+.head1 p{
+    font-weight: 700;
+    color: #FFA412;
+    
+}
+hr{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid rgba(0,0,0,.1);
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible;
+}
+.tab1 .til1 p{
+    text-align: center;
+
+}
+.button{
+    text-align: center;
+     background-color: #005CEE; 
+    height: 40px; 
+    line-height: 40px; 
+    border-radius: 20px; 
+    width: 100px;
+    display: block;
+    margin: auto;
+}
+.tab1 .til1 .button a{
+    font-size: 16px; 
+    color: #FFFFFF;
+    text-decoration: none;
+    text-align: center;
+}
+.main-tab{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: -20px;
+    
+}
+.til2{
+    
+    width: 100%;
+    min-height: 500px;
+}
+.til2 > p{
+    font-size: 30px;
+    font-weight: 700;
+    color: #00139B;
+}
+.line{
+    width: 100%;
+    
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+ 
+
+.til2 .line .line1 a{
+    text-decoration: none;
+    color: #00139B;
+}    
+
+.til2 .line .line1 #button{
+    background-color: #FED552;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100px;
+    margin: auto;
+}
+.til2 .line .line1 .butt{
+    padding: 10px;
+    margin: auto;
+}
+.til2 >.line >.line1 >.butt >span{
+    font-weight: 600;
+}
+.container-partner{
+    max-width: 100%;
+    background-color:#F0F0F0;
+    
+}
+.partner-text h3{
+    font-size: 25px;
+    padding-top: 20px;
+    color: #00139b;
+    font-family: inherit;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.partner-img{
+    display: flex;
+    margin-left: 18px;
+    margin-right: 18px;
+    margin-top: 0;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.bank .boder img{
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+    
+}
+.boder{
+    max-height: 110px;
+    min-height: 110px;
+    background-color: #FFFFFF;
+    margin: 50px 20px;
+    border: 2px solid #CECECE;
+    border-radius: 15px;
+    width:245px;
+    text-align: center;
+}
+/* .boder img{
+    width: 60%;
+    padding: 15px 50px;
+} */
+.container-sign{
+    /* background-image: url('https://dcvfinance.com/public/frontend/images/bg-3.png');
+    background-repeat: no-repeat; */
+    
+    width: 100%;
+    
+    margin-top: 30px;
+}
+.container-phone {
+    background-image: url('https://dcvfinance.com/public/frontend/images/bg-3.png');
+    background-repeat: no-repeat;
+    max-width: 100%;
+}
+.row{
+    display: flex;
+    margin-right: 300px;
+    justify-content: center;
+    
+}
+.row-text > p{
+    font-size: 27px;
+    color: #00139B;
+    font-weight: 600;
+    
+}
+.form{
+    border: 2px solid #D8D8D8;
+    border-radius: 15px;
+    padding: 40px;
+    width: 400px;
+    margin-top: 50px;
+    margin-left: 50px;
+    
+}
+
+.form > .form-group > p,input{
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.form > .form-group > input{
+    width: 379px;
+    background: #E3E7FF;
+    border-radius: 10px;
+    height: 51px;
+}
+.form > .form-group > button{
+    width: 379px;
+    /* background-image: url('Group\ 203.png');
+    background-size: 100%; */
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.12);
+    border-radius: 10px;
+    height: 51px;
+    margin-top: 10px;
+}
+.form-group .btn-primary{
+    height: auto;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: bold;
+    background-image: url('Group\ 203.png');
+    background-size: 120% 150%;
+    background-repeat: no-repeat;
+    width: 379px;
+    background-position-x: 40%;
+    background-position-y: 40%;
+}
+.ctn-otp{
+    display: flex;
+    justify-content: space-between;
+}
+.row-img{
+    margin-left: 100px;
+}
+
+.row-dowload{
+    max-width: 100%;
+    margin-top: 40px;
+}
+.dowload{
+    margin-top: 30px;
+}
+.dowload h3{
+    text-align: center;
+    color: #00139b;
+    font-family: inherit;
+    font-size: 27px;
+}
+.dowload-icon{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.icon1{
+    margin:0px 10px;
+}
+.footer{
+    max-width: 100%;
+    background-color: #F0F0F0;
+}
+.ctn-footer{
+    display: flex;
+    justify-content: center;
+    flex-wrap:wrap ;
+    
+}
+.row-footer{
+    width: 380px;
+}
+.icon-global img{
+    padding: 15px 15px;
+    
+}
+.contact{
+    width: 380px;
+    padding: 20px 10px;
+}
+.contact p{
+    margin-top: 10px;
+}
+.support{
+    width: 380px;
+    padding: 20px 10px;
+    
+}
+.support p{
+    margin-top: 10px;
+}
+.end{
+    background-color: #00139b;
+    height: 40px;
+}
+.end h6{
+    font-size: 15px;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+}
+
+
+
+
+
+    
+
+
